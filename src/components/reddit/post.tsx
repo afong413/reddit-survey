@@ -7,7 +7,6 @@ import { Post } from "@/app/reddit/post/[id]/route"
 import { LucideLoaderCircle } from "lucide-react"
 import { motion } from "motion/react"
 import { FactCheck, FactCheckMethod } from "@/components/ui/fact-check"
-import Image from "next/image"
 
 export type RedditPostData = {
   id: string
@@ -50,14 +49,14 @@ const RedditPost = forwardRef<
         <div className="flex size-full flex-col space-y-4">
           <div className="flex flex-col space-y-1">
             <div className="flex h-8 space-x-4">
-              <Image
+              <img
                 alt=""
                 src={
                   post.author.pfp ??
                   "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_1.png"
                 }
                 className="h-full rounded-full border border-stone-950 dark:border-stone-50"
-              ></Image>
+              ></img>
               <div className="flex flex-col">
                 <p className="text-xs font-bold">r/{post.subreddit}</p>
                 <p className="text-xs">{post.author.username}</p>
@@ -76,11 +75,11 @@ const RedditPost = forwardRef<
             />
           )}
           {post.image && (
-            <Image
+            <img
               alt=""
               src={post.image}
               className="rounded-2xl border border-stone-950 dark:border-stone-50"
-            ></Image>
+            ></img>
           )}
           {post.text && (
             <div
