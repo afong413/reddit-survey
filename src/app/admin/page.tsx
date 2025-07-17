@@ -40,7 +40,7 @@ export default function Admin() {
       const { error } = await supabase.auth.signOut()
       if (error) throw error
       router.push("/login")
-    } catch (error) {
+    } catch {
       // setError(error instanceof Error ? error.message : "An error occurred")
     } finally {
       // setIsLoading(false)
