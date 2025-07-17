@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server"
-import { existsSync, readFileSync } from "fs"
 import { FactCheckMethod } from "@/components/ui/fact-check"
 
 export type Post = {

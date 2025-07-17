@@ -36,7 +36,7 @@ export default function RootLayout({
       <body className="h-screen antialiased">
         <div className="align-center absolute top-0 z-50 flex h-screen w-screen flex-col items-center justify-center bg-stone-50 md:hidden dark:bg-stone-950">
           <LucideLaptop className="size-16" />
-          <p className="text-center text-2xl font-bold p-6">
+          <p className="p-6 text-center text-2xl font-bold">
             Only available on a larger screen size.
           </p>
         </div>

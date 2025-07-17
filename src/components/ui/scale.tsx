@@ -28,7 +28,7 @@ const Scale = forwardRef<
         <div
           key={i}
           className={cn(
-            "aspect-square h-full rounded-full border-2 p-0.5 dark:border-stone-50 cursor-pointer",
+            "aspect-square h-full cursor-pointer rounded-full border-2 p-0.5 dark:border-stone-50",
             i === answerState[0] ? "border-orange-400" : "border-stone-700",
           )}
           onClick={() => handleSelection(i)}

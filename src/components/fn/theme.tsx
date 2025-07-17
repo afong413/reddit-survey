@@ -10,7 +10,10 @@ export function Theme() {
           "dark"
         : "light"
     }
-    document.documentElement.classList.toggle("dark", localStorage.theme === "dark")
+    document.documentElement.classList.toggle(
+      "dark",
+      localStorage.theme === "dark",
+    )
   }, [])
 
   return null
