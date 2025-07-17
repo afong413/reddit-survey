@@ -27,8 +27,6 @@ export async function GET(
       readFileSync(`src/app/reddit/post/json/${id}.json`, "utf-8"),
     ) as Post
 
-    console.log(post)
-
     if (existsSync(`src/app/reddit/post/img/${id}.png`)) {
       post.image = `data:image/png;base64,${readFileSync(`src/app/reddit/post/img/${id}.png`).toString("base64")}`
     }
