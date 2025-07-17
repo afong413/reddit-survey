@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils"
-import { Dispatch, FormEventHandler, forwardRef, HTMLAttributes, SetStateAction, useState } from "react"
+import { Dispatch, forwardRef, HTMLAttributes, SetStateAction } from "react"
 
 const Scale = forwardRef<
   HTMLDivElement,

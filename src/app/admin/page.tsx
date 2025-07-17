@@ -18,8 +18,8 @@ export default function Admin() {
   const supabase = createClient()
 
   const [user, setUser] = useState<User | null>(null)
-  const [error, setError] = useState<string | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
+  // const [error, setError] = useState<string | null>(null)
+  // const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
 
   useEffect(() => {

@@ -13,7 +13,7 @@ import {
 import { createClient } from "@/lib/supabase/client"
 import { cn } from "@/lib/utils"
 import { LucideCheckCircle2 } from "lucide-react"
-import { ComponentPropsWithoutRef, useEffect, useState } from "react"
+import { ComponentPropsWithoutRef, useState } from "react"
 
 export type RedditQuestion = Question & { post: RedditPostData }
 

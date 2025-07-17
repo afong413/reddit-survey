@@ -1,6 +1,5 @@
 import { Metadata } from "next"
 import "./globals.css"
-import { Theme } from "@/components/fn/theme"
 import ThemeToggle from "@/components/theme-toggle"
 import { LucideLaptop } from "lucide-react"
 

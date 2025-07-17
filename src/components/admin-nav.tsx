@@ -1,9 +1,8 @@
 "use client"
 
-import ThemeToggle from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
+import Link from "next/link"
 import { ComponentPropsWithoutRef } from "react"
-import { motion } from "motion/react"
 
 export function Nav({ className, ...props }: ComponentPropsWithoutRef<"div">) {
   const pages = [
@@ -14,21 +13,21 @@ export function Nav({ className, ...props }: ComponentPropsWithoutRef<"div">) {
 
   return (
     <div className={cn("flex justify-between p-4", className)} {...props}>
-      <a
+      <Link
         href="/"
         className="text-xl font-bold hover:text-orange-400 dark:hover:text-stone-50/80"
       >
         Fact-Checking Surveys
-      </a>
+      </Link>
       <div className="flex gap-4">
         {pages.map(({ title, href }, i) => (
           <div key={i} className="flex items-center px-4">
-            <a
+            <Link
               href={href}
               className="hover:text-orange-400 dark:hover:text-stone-50/80"
             >
               {title}
-            </a>
+            </Link>
           </div>
         ))}
       </div>
