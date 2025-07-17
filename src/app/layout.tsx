@@ -1,41 +1,51 @@
-import type { Metadata } from "next";
-import { Geist } from "next/font/google";
-import { ThemeProvider } from "next-themes";
-import "./globals.css";
-
-const defaultUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "http://localhost:3000";
+import { Metadata } from "next"
+import "./globals.css"
+import { Theme } from "@/components/fn/theme"
+import ThemeToggle from "@/components/theme-toggle"
+import { LucideLaptop } from "lucide-react"
 
 export const metadata: Metadata = {
-  metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Starter Kit",
-  description: "The fastest way to build apps with Next.js and Supabase",
-};
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  display: "swap",
-  subsets: ["latin"],
-});
+  title: "Fact-Check Survey",
+  description: "Surveys for research into fact-checking on social media.",
+  robots: { index: false, follow: false },
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
+  const setTheme = `
+    (function() {
+      try {
+        if (!("theme" in localStorage)) {
+          localStorage.theme =
+            window.matchMedia("(prefers-color-scheme: dark)").matches ?
+              "dark"
+            : "light"
+        }
+        document.documentElement.classList.toggle("dark", localStorage.theme === "dark")
+      } catch(e) {}
+    })()
+  `.trim()
+
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.className} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: setTheme }}></script>
+      </head>
+      <body className="h-screen antialiased">
+        <div className="align-center absolute top-0 z-50 flex h-screen w-screen flex-col items-center justify-center bg-stone-50 md:hidden dark:bg-stone-950">
+          <LucideLaptop className="size-16" />
+          <p className="text-center text-2xl font-bold p-6">
+            Only available on a larger screen size.
+          </p>
+        </div>
+        <div className="size-full max-md:hidden">
           {children}
-        </ThemeProvider>
+          <ThemeToggle className="absolute right-4 bottom-4 size-8" />
+        </div>
       </body>
     </html>
-  );
+  )
 }

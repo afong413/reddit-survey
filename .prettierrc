@@ -1,0 +1,7 @@
+{
+  "semi": false,
+  "experimentalTernaries": true,
+  "quoteProps": "consistent",
+  "plugins": ["prettier-plugin-tailwindcss"],
+  "tailwindFunctions": ["cva", "cn"]
+}

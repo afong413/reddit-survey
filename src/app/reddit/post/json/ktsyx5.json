@@ -1,0 +1,13 @@
+{
+  "subreddit": "askscience",
+  "title": "Moderna mRNA vaccine, does it change your genome?",
+  "author": {
+    "username": "[deleted]"
+  },
+  "text": "&lt;!-- SC_OFF --&gt;&lt;div class=\"md\"&gt;&lt;p&gt;I know that mRNA goes to the ribosome to create proteins and this mRNA has been designed to produce spike proteins so your immune system can make antibodies. But I’ve heard online that the mRNA could actually end up changing your genome, like how a herpes virus can infect a hosts genome and remain dormant in the hosts cell for a long time. Do you think there is reason to worry about this? I’m asking because my mom is a teacher and I’m worried that the vaccine hasn’t been tested enough and she’s going to be a human guinea pig.&lt;/p&gt;\n&lt;/div&gt;&lt;!-- SC_ON --&gt;",
+  "context": {
+    "community": "This claim is misleading. mRNA vaccines like Moderna’s do not integrate into your DNA. mRNA is a temporary set of instructions that stays in the cell’s cytoplasm and never enters the nucleus, where your genome is located. Unlike some viruses (e.g., herpes or retroviruses like HIV), mRNA doesn’t contain reverse transcriptase, an enzyme required to convert RNA into DNA. The body breaks down the mRNA shortly after it’s used. There’s no credible evidence showing genome alteration from mRNA vaccines. Multiple peer-reviewed studies and real-world data support their safety.",
+    "ai": "This post contains a misconception. mRNA from the Moderna COVID-19 vaccine does not alter your genome. The vaccine delivers mRNA into cells so they can make a harmless version of the spike protein, triggering an immune response. This mRNA never enters the cell nucleus, where DNA is stored. Additionally, it lacks the necessary mechanisms, such as reverse transcriptase, to convert into DNA or integrate with your genes. Decades of research into mRNA technology and ongoing monitoring of vaccinated populations show no evidence of genetic modification.",
+    "expert": "This concern reflects a common misunderstanding of how mRNA vaccines work. The mRNA in the Moderna vaccine is designed solely to instruct cells to produce the SARS-CoV-2 spike protein, prompting an immune response. Importantly, it does not enter the nucleus of the cell, where DNA resides, and lacks the ability to alter genetic material. Herpes viruses integrate into DNA because they possess specific mechanisms for doing so—mRNA vaccines do not. Extensive clinical trials and global safety monitoring have not found any evidence of genomic integration from mRNA vaccines."
+  }
+}

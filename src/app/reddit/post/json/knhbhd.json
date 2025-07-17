@@ -1,0 +1,12 @@
+{
+  "subreddit": "conservatives",
+  "title": "BREAKING – GAME OVER: Dominion voting machines LIVE HACKED during Georgia Senate hearing",
+  "author": {
+    "username": "reddit-is-bunk"
+  },
+  "context": {
+    "community": "This post is misleading. The claim that Dominion voting machines were \"live hacked\" during a Georgia Senate hearing has been widely debunked. What actually happened was a cybersecurity expert claimed he could observe internet traffic related to a Dominion system, but there was no verified evidence of a hack occurring in real time, nor was any voting system breached. The term \"live hacked\" is an exaggeration that misrepresents technical observations and fuels distrust without proof.",
+    "ai": "The assertion that Dominion voting machines were \"live hacked\" during a Georgia Senate hearing is inaccurate. There was no verified breach of Dominion equipment during the hearing. The reference comes from a presentation in which a cybersecurity analyst described internet traffic potentially associated with election systems, but no confirmed intrusion into any voting machine took place. Multiple audits and investigations, including those led by state and federal agencies, found no evidence that Dominion machines were compromised.",
+    "expert": "This claim misrepresents the facts. No Dominion voting machines were “live hacked” during the Georgia Senate hearing in question. A cybersecurity contractor testified to observing network traffic related to election systems, but his claims were not independently verified and did not constitute a hack. Subsequent reviews by the Georgia Secretary of State’s office and the Department of Homeland Security confirmed that Dominion machines used in the state were not connected to the internet and showed no signs of interference."
+  }
+}
