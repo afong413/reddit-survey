@@ -33,17 +33,17 @@ export default function Admin() {
   }, [])
 
   async function handleLogout() {
-    setIsLoading(true)
-    setError(null)
+    // setIsLoading(true)
+    // setError(null)
 
     try {
       const { error } = await supabase.auth.signOut()
       if (error) throw error
       router.push("/login")
     } catch (error) {
-      setError(error instanceof Error ? error.message : "An error occurred")
+      // setError(error instanceof Error ? error.message : "An error occurred")
     } finally {
-      setIsLoading(false)
+      // setIsLoading(false)
     }
   }
 
