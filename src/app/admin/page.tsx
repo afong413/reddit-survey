@@ -30,7 +30,7 @@ export default function Admin() {
       setUser(user)
     }
     getUser()
-  }, [])
+  }, [supabase.auth])
 
   async function handleLogout() {
     // setIsLoading(true)
