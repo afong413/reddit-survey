@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils"
 import { forwardRef, HTMLAttributes, useEffect, useState } from "react"
 import { decode } from "he"
-import { Post } from "@/app/reddit/post/[id]/route"
+import { Post } from "@/app/api/reddit/post/[id]/route"
 import { LucideLoaderCircle } from "lucide-react"
 import { motion } from "motion/react"
 import { FactCheck, FactCheckMethod } from "@/components/ui/fact-check"
@@ -28,7 +28,7 @@ const RedditPost = forwardRef<
 
   useEffect(() => {
     const fetchPost = async () => {
-      const post = await fetch(`/reddit/post/${postData.id}`).then(
+      const post = await fetch(`/api/reddit/post/${postData.id}`).then(
         async (result) => (await result.json()) as Post,
       )
       setPost(post)
