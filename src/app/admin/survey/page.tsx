@@ -1,3 +1,3 @@
-export function Survey() {
+export default function Survey() {
   return <>Survey Results</>
 }
