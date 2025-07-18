@@ -21,7 +21,7 @@ export default function ThemeToggle({
   return (
     <button
       className={cn(
-        "flex aspect-square items-center justify-center rounded-full",
+        "flex aspect-square items-center justify-center rounded-full cursor-pointer",
         className,
       )}
       onClick={toggleTheme}

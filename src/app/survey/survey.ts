@@ -18,4 +18,4 @@ export const instructions =
   " After reading and examining the post for up to two minutes, please rate how credible" +
   " you believe the post to be."
 
-export const completionCode = "CSYKA865"
+export const completionCode = "C1HJJLOE"

@@ -4,8 +4,7 @@ import ThemeToggle from "@/components/theme-toggle"
 import { LucideLaptop } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Fact-Check Survey",
-  description: "Surveys for research into fact-checking on social media.",
+  title: "Reddit Survey",
   robots: { index: false, follow: false },
 }
 
