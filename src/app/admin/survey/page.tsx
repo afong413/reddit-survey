@@ -120,7 +120,12 @@ export default function Survey() {
               className="flex flex-1 flex-col justify-between space-y-4"
             >
               <h2 className="text-2xl font-bold">
-                {factCheckMethodHumanReadable[factCheckMethod ?? "control"]}
+                {factCheckMethodHumanReadable[factCheckMethod ?? "control"]} (
+                {barChartData[factCheckMethod ?? "null"].reduce(
+                  (partial, x) => partial + x,
+                  0,
+                )}
+                )
               </h2>
               <BarChart
                 key={barChartData[factCheckMethod ?? "null"].toString()}
