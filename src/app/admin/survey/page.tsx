@@ -2,7 +2,7 @@
 
 import { BarChart } from "@/components/ui/bar-chart"
 import { FactCheckMethod } from "@/components/ui/fact-check"
-import { Barcode, LucideChevronLeft, LucideChevronRight } from "lucide-react"
+import { LucideChevronLeft, LucideChevronRight } from "lucide-react"
 import { questionSets } from "@/app/survey/survey"
 import { useEffect, useState } from "react"
 import { RedditPost } from "@/components/reddit/post"
@@ -27,7 +27,7 @@ export default function Survey() {
     control: "Control",
   }
 
-  let posts: string[] = []
+  const posts: string[] = []
   for (const questionSet of Object.values(questionSets)) {
     posts.push(...questionSet.false)
   }
@@ -47,7 +47,7 @@ export default function Survey() {
       router.replace("/admin/survey?post=0")
       fetchDataFromSupabase(posts[0])
     }
-  }, [searchParams])
+  }, [searchParams, fetchDataFromSupabase, posts, router])
 
   const [barChartData, setBarChartData] = useState<BarChartData>({
     community: Array(7).fill(0),
@@ -85,7 +85,7 @@ export default function Survey() {
 
   useEffect(() => {
     fetchDataFromSupabase(posts[postNum])
-  }, [postNum])
+  }, [postNum, fetchDataFromSupabase, posts])
 
   return (
     <div className="flex size-full flex-col space-y-6 px-16 pt-6 pb-12">
