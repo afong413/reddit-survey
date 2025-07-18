@@ -47,7 +47,7 @@ export default function Survey() {
       router.replace("/admin/survey?post=0")
       fetchDataFromSupabase(posts[0])
     }
-  }, [searchParams, fetchDataFromSupabase, posts, router])
+  }, [searchParams])
 
   const [barChartData, setBarChartData] = useState<BarChartData>({
     community: Array(7).fill(0),
@@ -85,7 +85,7 @@ export default function Survey() {
 
   useEffect(() => {
     fetchDataFromSupabase(posts[postNum])
-  }, [postNum, fetchDataFromSupabase, posts])
+  }, [postNum])
 
   return (
     <div className="flex size-full flex-col space-y-6 px-16 pt-6 pb-12">
