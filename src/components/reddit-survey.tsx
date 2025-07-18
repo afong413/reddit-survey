@@ -108,7 +108,7 @@ export default function RedditSurvey({
           <div className="flex flex-col p-6">
             <p className="text-center text-2xl font-bold">Survey complete.</p>
             <p className="text-center text-2xl font-bold">
-              Completion Code: {survey.completionCode}
+              Completion Code: {atob(survey.completionCode)}
             </p>
           </div>
         </div>
