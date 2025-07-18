@@ -52,7 +52,9 @@ export default function RedditSurvey({
 
     if (questionNum >= survey.questions.length - 1) {
       window.open(
-        `https://app.prolific.com/submissions/complete?cc=${survey.completionCode}`,
+        atob(
+          "aHR0cHM6Ly9hcHAucHJvbGlmaWMuY29tL3N1Ym1pc3Npb25zL2NvbXBsZXRlP2NjPQ==",
+        ) + atob(survey.completionCode),
         "_blank",
         "noopener,noreferrer",
       )
