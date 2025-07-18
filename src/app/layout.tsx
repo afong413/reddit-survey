@@ -17,10 +17,7 @@ export default function RootLayout({
     (function() {
       try {
         if (!("theme" in localStorage)) {
-          localStorage.theme =
-            window.matchMedia("(prefers-color-scheme: dark)").matches ?
-              "dark"
-            : "light"
+          localStorage.theme = "light"
         }
         document.documentElement.classList.toggle("dark", localStorage.theme === "dark")
       } catch(e) {}

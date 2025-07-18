@@ -9,11 +9,7 @@ export default function ThemeToggle({
   ...props
 }: ComponentPropsWithoutRef<"button">) {
   function toggleTheme() {
-    const dark =
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-
+    const dark = localStorage.theme === "dark"
     localStorage.theme = dark ? "light" : "dark"
     document.documentElement.classList.toggle("dark", !dark)
   }
@@ -21,7 +17,7 @@ export default function ThemeToggle({
   return (
     <button
       className={cn(
-        "flex aspect-square items-center justify-center rounded-full cursor-pointer",
+        "flex aspect-square cursor-pointer items-center justify-center rounded-full",
         className,
       )}
       onClick={toggleTheme}
