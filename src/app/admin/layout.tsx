@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <div className="flex h-screen flex-col">
       <Nav className="sticky top-0 h-16 w-full" />
-      <div className="flex grow flex-col">{children}</div>
+      <div className="w-full flex-1">{children}</div>
     </div>
   )
 }
