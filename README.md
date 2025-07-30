@@ -6,4 +6,6 @@ This is the survey website used for my study "Efficacy of Fact-Checking Sources 
 
 Paper:
 
-Data & Data Analysis Files: [https://github.com/afong413/reddit-survey-data-analysis](https://github.com/afong413/reddit-survey-data-analysis)
+Presentation:
+
+Data CSVs & Data Analysis Code: [https://github.com/afong413/reddit-survey-data-analysis](https://github.com/afong413/reddit-survey-data-analysis)
